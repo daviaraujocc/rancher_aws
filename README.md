@@ -6,6 +6,8 @@ O projeto a seguir tem como foco fazer a implementação de um ambiente de teste
 
 A ideia veio do ambiente criado pelo @Jonathan Baraldi na qual ministrou no curso de Devops Kubernetes (link no final da página) que estou estudando no momento.
 
+Meu objetivo é aprimorar o conhecimento que possuo atualmente de terraform e IaC para provisionar todo a arquitetura através desse projeto.
+
 Tecnologias usadas :
 
 - Terraform
