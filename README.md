@@ -22,6 +22,15 @@ O mesmo irá fazer a instalação automática dos ambientes e requisitos para qu
 
 Por fim as integrações finais que acessarem pela regex *.rancher.dominio irão ser redirecionadas de forma aleatória para os nodes que terão alguma aplicação instalada
 
+# Screenshots
+
+![image](https://user-images.githubusercontent.com/70732391/117558917-71a1bb00-b057-11eb-9e69-609ad91120a6.png)
+
+![image](https://user-images.githubusercontent.com/70732391/117558924-867e4e80-b057-11eb-8df2-ed6b78edba5c.png)
+
+![image](https://user-images.githubusercontent.com/70732391/117558933-8e3df300-b057-11eb-814c-458767071ae9.png)
+
+
 
 
 Fonte de inspiração : https://www.udemy.com/course/devops-mao-na-massa-docker-kubernetes-rancher/
