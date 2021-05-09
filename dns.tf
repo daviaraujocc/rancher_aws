@@ -15,14 +15,13 @@ resource "aws_route53_record" "rancherdns" {
   depends_on = [aws_instance.rancher, ]
 }
 
-#Define o dns para os nodes criados
+#Define um dns geral para os nodes criados
 
 resource "aws_route53_record" "k8sdns" {
   zone_id    = data.aws_route53_zone.dns.zone_id
-  name       = "app${count.index}.rancher.${data.aws_route53_zone.dns.name}"
+  name       = "*.rancher.${data.aws_route53_zone.dns.name}"
   type       = "A"
   ttl        = "300"
-  count      = var.qntNodes_k8s
-  records    = [aws_instance.k8s[count.index].public_ip]
+  records    = aws_instance.k8s[*].public_ip
   depends_on = [aws_instance.k8s, ]
 }
