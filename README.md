@@ -1,4 +1,4 @@
-# Projeto terraform com kubernetes
+# Projeto terraform com kubernetes (AWS)
 
 O projeto a seguir tem como foco fazer a implementação de um ambiente de testes usando a estrutura da AWS.
 
@@ -9,6 +9,7 @@ Tecnologias usadas :
 - Rancher
 - Kubernetes (k8s)
 - AWS
+
 
 # Arquitetura
 
@@ -21,6 +22,8 @@ O código tem como objetivo a criação de uma estrutura de testes como no exemp
 O mesmo irá fazer a instalação automática dos ambientes e requisitos para que ocorra essa comunicação, sendo necessário a configuração manual de cada node.
 
 Por fim as requisições no host final que acessarem pela regex *.rancher.dominio irão ser redirecionadas de forma aleatória para um dos nodes baseado no load balancer criado no Route53 o que deve eliminar a necessidade de preocupação caso um dos nodes pare de funcionar.
+
+<b>Observação: esse ambiente é destinado a testes, por conta disso todas as portas de todos os hosts são liberadas para o externo por padrão</b>
 
 # Screenshots
 
