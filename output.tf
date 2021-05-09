@@ -9,7 +9,3 @@ output "instance_public_ipv4_k8s" {
 output "rancher_dns" {
   value = aws_route53_record.rancherdns.name
 }
-
-output "k8s_dns" {
-  value = aws_route53_record.k8sdns[*].name
-}
