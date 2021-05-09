@@ -20,6 +20,8 @@ O código tem como objetivo a criação de uma estrutura de testes como no exemp
 
 O mesmo irá fazer a instalação automática dos ambientes e requisitos para que ocorra essa comunicação, sendo necessário a configuração manual de cada node.
 
+Por fim as integrações finais que acessarem pela regex *.rancher.dominio irão ser redirecionadas de forma aleatória para os nodes que terão alguma aplicação instalada
+
 
 
 Fonte de inspiração : https://www.udemy.com/course/devops-mao-na-massa-docker-kubernetes-rancher/
