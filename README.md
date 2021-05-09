@@ -39,7 +39,7 @@ Por fim as requisições no host final que acessarem pela regex *.rancher.domini
 
 Opcional:
 
-- publicKey : chave pública que será utilizada para criar um novo registro de pares de chave na aws, caso você ja possua um deixar esse campo em BRANCO
+- publicKey : chave pública que será utilizada para criar um novo registro de pares de chave na aws, caso você ja possua um deixar esse campo em BRANCO e remover o resource de chaves no main.tf
 
 
 
