@@ -1,0 +1,15 @@
+version: '3.0'
+
+#docker-compose run --rm tf init
+
+services:
+    tf:
+        image: hashicorp/terraform:0.12.24
+        volumes: 
+          - .:/aws
+          - /root/.ssh/:/tmp
+        working_dir: /aws
+        environment: 
+            - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+            - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+            
