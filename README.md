@@ -37,7 +37,7 @@ Por fim as requisições no host final que acessarem pela regex *.rancher.domini
 - keyName : indicar o nome do par de chave criado na AWS
 - keyPath : indicar o caminho da chave privada referenciada no pares de chave que você referenciou na variável keyName
 
-Opcional:
+<b>Opcional:</b>
 
 - publicKey : chave pública que será utilizada para criar um novo registro de pares de chave na aws, caso você ja possua um deixar esse campo em BRANCO e remover o resource de chaves no main.tf
 
