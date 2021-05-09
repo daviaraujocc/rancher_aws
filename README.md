@@ -1,6 +1,10 @@
 # Projeto terraform com kubernetes (AWS)
 
+# Introdução
+
 O projeto a seguir tem como foco fazer a implementação de um ambiente de testes usando a estrutura da AWS.
+
+A ideia veio do ambiente criado pelo @Jonathan Baraldi na qual ministrou no curso de Devops Kubernetes (link no final da página) que estou estudando no momento.
 
 Tecnologias usadas :
 
@@ -9,6 +13,7 @@ Tecnologias usadas :
 - Rancher
 - Kubernetes (k8s)
 - AWS
+- Traefik (futuramente)
 
 
 # Arquitetura
@@ -17,13 +22,26 @@ Tecnologias usadas :
 
 
 
-O código tem como objetivo a criação de uma estrutura de testes como no exemplo acima, aonde na plataforma da própria AWS iremos montar um ambiente customizado para administração de clusters kubernetes com o uso da ferramenta rancher, aonde irá ser definido de forma automática o seu FQDN integrado ao serviço de DNS Route53 como também dos demais nodes que serão criados sucessivamente a partir do valor da quantidade desejada.
+O código tem como objetivo a criação de uma estrutura de testes como no exemplo acima, aonde na plataforma da própria AWS iremos montar um ambiente customizado em uma VPC padrão  para administração de clusters kubernetes com o uso da ferramenta orquestradora rancher, aonde irá ser definido de forma automática o seu FQDN, integrado ao serviço de DNS Route53, como também dos demais nodes que serão criados sucessivamente a partir do valor da quantidade desejada.
 
-O mesmo irá fazer a instalação automática dos ambientes e requisitos para que ocorra essa comunicação, sendo necessário a configuração manual de cada node.
+O mesmo irá fazer a instalação automática dos ambientes e requisitos para que ocorra essa comunicação, sendo somente necessário a configuração manual de cada node.
 
 Por fim as requisições no host final que acessarem pela regex *.rancher.dominio irão ser redirecionadas de forma aleatória para um dos nodes baseado no load balancer criado no Route53 o que deve eliminar a necessidade de preocupação caso um dos nodes pare de funcionar.
 
 <b>Observação: esse ambiente é destinado a testes, por conta disso todas as portas de todos os hosts são liberadas para o externo por padrão</b>
+
+
+<b>Variáveis importantes a serem preenchidas :</b>
+
+- qntNodes_k8s : quantidade de nodes que irão compor o cluster ou demais clusters
+- keyName : indicar o nome do par de chave criado na AWS
+- keyPath : indicar o caminho da chave privada referenciada no pares de chave que você referenciou na variável keyName
+
+Opcional:
+
+- publicKey : chave pública que será utilizada para criar um novo registro de pares de chave na aws, caso você ja possua um deixar esse campo em BRANCO
+
+
 
 # Screenshots
 
