@@ -22,4 +22,4 @@ O mesmo irá fazer a instalação automática dos ambientes e requisitos para qu
 
 
 
-Fonte do curso de inspiração : https://www.udemy.com/course/devops-mao-na-massa-docker-kubernetes-rancher/
+Fonte de inspiração : https://www.udemy.com/course/devops-mao-na-massa-docker-kubernetes-rancher/
