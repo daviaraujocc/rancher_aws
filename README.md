@@ -15,7 +15,11 @@ Tecnologias usadas :
 - Rancher
 - Kubernetes (k8s)
 - AWS
-- Traefik (futuramente)
+
+Tecnologias a serem implementadas:
+
+- Traefik 
+- Longhorn
 
 
 # Arquitetura
