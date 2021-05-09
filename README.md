@@ -36,4 +36,4 @@ Por fim as requisições no host final que acessarem pela regex *.rancher.domini
 
 
 
-Fonte de inspiração : https://www.udemy.com/course/devops-mao-na-massa-docker-kubernetes-rancher/
+Fonte: https://www.udemy.com/course/devops-mao-na-massa-docker-kubernetes-rancher/
