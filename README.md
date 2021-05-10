@@ -16,10 +16,6 @@ Tecnologias usadas :
 - Kubernetes (k8s)
 - AWS
 
-Tecnologias a serem implementadas:
-
-- Traefik 
-- Longhorn
 
 
 # Arquitetura
